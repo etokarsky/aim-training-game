@@ -1,0 +1,192 @@
+/*Обнуление*/
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,
+:active {
+	outline: none;
+}
+a:focus,
+a:active {
+	outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+	display: block;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+
+input::-ms-clear {
+	display: none;
+}
+button {
+	cursor: pointer;
+}
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+ul li {
+	list-style: none;
+}
+img {
+	vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+	font-weight: 400;
+}
+/*--------------------*/
+
+@import url("https://fonts.googleapis.com/css?family=Khula&display=swap");
+
+body {
+	color: #fff;
+	font-family: "Khula", sans-serif;
+	overflow: hidden;
+	text-align: center;
+}
+
+a:hover {
+	color: #16d9e3;
+}
+
+.start {
+	color: #fff;
+	font-size: 1.5rem;
+}
+
+.reset-btn {
+	color: #fff;
+	font-size: 1.5rem;
+	cursor: pointer;
+}
+
+.delay-label {
+	font-size: 1.5rem;
+}
+
+h1 {
+	line-height: 1.4;
+	font-size: 4rem;
+}
+
+.screen {
+	height: 100%;
+	width: 100%;
+	background: linear-gradient(90deg, #29323c 0%, #485563 100%);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	transition: margin 0.5s ease-out;
+}
+
+.screen.up {
+	margin-top: -100vh;
+}
+
+.time-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.time-list li {
+	margin: 10px;
+}
+
+.time-btn {
+	color: #fff;
+	background: transparent;
+	border: 2px solid #c0c0c0;
+	padding: 0.5rem 1rem;
+	font-size: 1.5rem;
+}
+
+.time-btn:hover {
+	border: 2px solid #16d9e3;
+	color: #16d9e3;
+}
+
+.time-left-header {
+	font-size: 1.5rem;
+}
+
+.hide {
+	display: none;
+}
+
+.finish-red {
+	color: red;
+}
+
+.primary {
+	color: #16d9e3;
+}
+
+.board {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 60%;
+	height: 60%;
+	overflow: hidden;
+	background: linear-gradient(118.38deg, #29323c -4.6%, #485563 200.44%);
+	box-shadow: -8px -8px 20px #2a333d, 10px 7px 20px #475462;
+	border-radius: 30px;
+	margin: 1.5rem 0 0 0;
+}
+
+.circle {
+	background: linear-gradient(90deg, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
+	position: absolute;
+	cursor: crosshair;
+	border-radius: 50%;
+}
+
+.circle:hover {
+	box-shadow: inset 0px 0px 15px #eee;
+}
